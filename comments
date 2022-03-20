@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+//this code is created by Chaitali
+/*this 
+is 
+a 
+multi
+line 
+comment*/
+int main(){
+    cout<<"Hello World";
+     return 0;
+}
