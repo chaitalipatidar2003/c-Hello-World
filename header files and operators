@@ -1,0 +1,27 @@
+#include<iostream>
+
+//  There are 2 types of header files:
+// 1.System header files:It comes with the compiler
+// 2.User defines header files:It is written by the programmer
+// #include "this.h" -->this will produce error if this.h is not present in the current directory
+
+using namespace std;
+
+int main(){
+
+int a=10;
+int b=5;
+ cout<<"operators in c++:";
+ cout<<"Following  are the types of operators in c++";
+//  Arithmatic operators
+cout<<"The value of a+b :"<<a+b;
+cout<<"The value of a-b :"<<a-b;
+cout<<"The value of a*b :"<<a*b;
+cout<<"The value of a/b :"<<a/b;
+cout<<"The value of a%b :"<<a%b;
+cout<<"The value of a++ :"<<a++;
+cout<<"The value of a-- :"<<a--;
+cout<<"The value of ++a :"<<++a;
+cout<<"The value of --a :"<<--a;
+ return 0;   
+}
