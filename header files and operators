@@ -9,7 +9,7 @@ using namespace std;
 
 int main(){
 
-int a=10;
+int a=4;
 int b=5;
  cout<<"operators in c++:";
  cout<<"Following  are the types of operators in c++";
@@ -23,5 +23,24 @@ cout<<"The value of a++ :"<<a++;
 cout<<"The value of a-- :"<<a--;
 cout<<"The value of ++a :"<<++a;
 cout<<"The value of --a :"<<--a;
+// Assingment operator --< used to assign the values to variables
+// int a=4,b=5;
+// char d='d';
+
+// comparison operators
+cout<<"Following are the comparison operators in c++";
+cout<<"The value of a==b is"<<(a==b);
+cout<<"The value of a!=b is"<<(a!=b);
+cout<<"The value of a<=b is"<<(a<=b);
+cout<<"The value of a>=b is"<<(a>=b);
+cout<<"The value of a<b is"<<(a<b);
+cout<<"The value of a>b is"<<(a>b);
+
+// logical operators
+cout<<"Following are the logical operators in c++";
+cout<<"The value of this logical and operator ((a==b) && (a<b)) is"<<((a==b) && (a<b));
+cout<<"The value of this logical or operator ((a==b) || (a<b)) is"<<((a==b) || (a<b));
+
+
  return 0;   
 }
