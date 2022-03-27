@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+// inline function*******************************
+ inline int product(int a, int b){
+    return a*b;
+}
+
+// do not reccomend below lines with inline functions
+// int product(int a, int b){
+//     static int c=0;//this executes only once.
+//     c=c+1; //next time this function will run,the value of c will be retained.
+//     return a*b+c;
+//  }
+
+
+// default arguments*********************************
+float moneyReceived(int currentMoney, float factor=1.04){
+return currentMoney*factor;
+}
+
+// constant arguement*********************
+// int strlen(constant char *p){
+
+// }
+
+
+
+int main(){
+    int a, b;
+    cout<<"Enter the value of a and b"<<endl;
+    cin>>a>>b;
+    // cout<<"The product is "<<product(a,b)<<endl;
+    int money=100000;
+
+    cout<<"If you have "<<money<<" in your bank account, you will receive "<<moneyReceived(money)<<" Rs after 1 year"<<endl;
+    cout<<"For VIP: If you have "<<money<<" in your bank account, you will receive "<<moneyReceived(money,1.1)<<" Rs after 1 year";
+    
+
+    return 0;
+
+}
