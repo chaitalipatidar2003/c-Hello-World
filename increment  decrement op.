@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x=3,c;
+   int  y=4,z=5;
+
+   c= ++x + ++y + ++z + x++;
+
+    // c= ++x + x--;
+// c= ++x + x++ + x++ + x--;
+//    c= ++y + y-- + y++;
+//    c= z++ + z-- + y--;
+// x += --x + x-- + y++;
+   
+    cout<<"the value of x is "<<x<<endl;
+    cout<<"the value of y is "<<y<<endl;
+    cout<<"the value of z is "<<z<<endl;
+    cout<<"the value of c is "<<c<<endl;
+
+
+    return 0;
+}
