@@ -1,0 +1,52 @@
+//**************1. Write a program to print the address of a variable whose value is input from user
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n,p;
+    
+//     cout<<"Enter n";
+//     cin>>n;
+//     cout<<"Address of n is "<<&n;
+    
+//     return 0;
+// }
+
+// 2.  pointer to pointer
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int a=10,*p,**q;
+//     p=&a;
+//     q=&p;
+//     cout<<"\na= ";
+//     cout<<"\n*p= ";
+//     cout<<"\n**q= ";
+    
+// }
+
+
+//****************3.  ARRAY OF POINTER*********************************
+
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int a=10,b=20,c=30;
+    int *p[3];
+
+    p[0]=&a;
+    p[1]=&b;
+    p[2]=&c;
+
+    for (int  i = 0; i <=2; i++)
+    {
+        cout<<*p[i]<<" ";
+    }
+    
+    
+}
