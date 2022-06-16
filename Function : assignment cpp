@@ -1,0 +1,299 @@
+//***************1.    Define a function that returns the product of two numbers entered by user.
+// #include<iostream>
+// using namespace std;
+// void product(float ,float);
+
+// int main(){
+//    float a,b;
+//    cout<<"Enter a and b \n";
+//    cin>>a>>b;
+//    product(a,b);
+//     return 0;
+// }
+
+// void product(float x ,float y)
+// {float p;
+// p=x*y;
+// cout<<"Product of "<<x<<" and "<<y<<" is "<<p;
+
+// }
+
+//**********************2. Define two functions to print the maximum and the
+// minimum number respectively among three numbers entered by user.
+// #include<iostream>
+// using namespace std;
+// void max(int ,int ,int);
+// void min(int ,int, int);
+
+// int main(){
+//  int a,b,c;
+//  cout<<"Enter a, b, and c\n";
+//  cin>>a>>b>>c;
+
+//  max(a,b,c);
+//  min(a,b,c);
+//     return 0;
+// }
+
+// void max(int x,int y ,int z)
+// {
+//     if(x>y)
+//     {
+//         if(x>z)
+//         cout<<x<<" is maximum \n";
+//         else
+//         cout<<z<<" is maximum \n";
+
+//   }
+//     else
+//     {
+//      if(y>z)
+//         cout<<y<<" is maximum \n";
+//         else
+//         cout<<z<<" is maximum \n";
+
+//     }
+// }
+
+// void min(int x,int y ,int z)
+// {
+//     if(x<y)
+//     {
+//         if(x<z)
+//         cout<<x<<" is minimum \n";
+//         else
+//         cout<<z<<" is minimum \n";
+
+//     }
+//     else
+//     {
+//      if(y<z)
+//         cout<<y<<" is minimum \n";
+//         else
+//         cout<<z<<" is minimum \n";
+
+//     }
+// }
+
+//**************3.   Define a program to find out whether a given number is even or odd.
+// #include <iostream>
+// using namespace std;
+// void even_odd(int);
+
+// int main()
+// {
+//     int a;
+//     cout << "Enter a \n";
+//     cin >> a;
+
+//     even_odd(a);
+
+//     return 0;
+// }
+
+// void even_odd(int n)
+// {
+//     if (n % 2 == 0)
+//     {
+//         cout << "Number is even\n ";
+//     }
+//     else
+//     {
+//         cout << "NUmber is odd \n";
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+/**********4. /A person is elligible to vote if his/her age is greater than or equal to 18. 
+//************Define a function to find out if he/she is elligible to vote.
+// #include<iostream>
+// using namespace std;
+// void vote(int )
+// {
+//     int age;
+//     cout<<"Enter the age \n";
+//     cin>>age;
+//     if(age<18)
+//     {
+//         cout<<"You are not eligible to vote\n";
+
+//     }
+//     else
+//     {
+//         cout<<"You can vote\n";
+
+//     }
+// }
+
+ 
+// int main(){
+//     int x;
+//     vote(x);
+
+//     return 0;
+// }
+
+
+
+//****************5.  Define a function to find out if number is prime or not.
+// #include <iostream>
+// using namespace std;
+
+// void prime(int);
+
+// int main()
+// {
+//     int n, div, i;
+
+//     cout << "Enter the number\n";
+//     cin >> n;
+//     prime(n);
+// }
+
+// void prime(int a)
+// {
+//    int div = 2;
+
+//     while(div<a)
+//     {
+//         if (a % div == 0)
+//         {
+//             cout << "NUMBER IS NOT PRIME.... \n";
+//             exit(0);
+//         }
+//         div++;
+
+//     }
+//     cout << "Number is  prime....\n";
+// }
+
+//******************6. Define a function to print the prime factors of a number.*********
+
+// #include<iostream>
+// using namespace std;
+// void factors(int);
+
+// int main(){
+// int n;
+
+// cout<<"Enter the number\n";
+// cin>>n;
+
+// factors(n);
+
+//     return 0;
+// }
+
+// void factors(int x)
+// {
+//     int i=1;
+//     cout<<"Prime factors are : \n";
+//     while(i<x)
+//     {
+//         if(x%i==0)
+//         {
+//             cout<<i<<" ";
+//         }
+//         i++;
+//     }
+// }
+
+//*****************7. Sum of natural numbers using Recursion***
+// #include <iostream>
+// using namespace std;
+
+// int sum(int n);
+
+// int main() {
+//     int number, result;
+
+//     cout<<"Enter a positive integer: ";
+//     cin>>number;
+
+//     result = sum(number);
+
+//     cout<<"sum = "<< result;
+//     return 0;
+// }
+
+// int sum(int n) {
+//     if (n != 0)
+//         // sum() function calls itself
+//         return n + sum(n-1);
+//     else
+//         return n;
+// }
+
+//*********8. Program to Convert Binary Number to Decimal using function**
+// #include <iostream>
+// #include <math.h>
+// using namespace std;
+// void binary_to_deci(int);
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter the binary number \n";
+//     cin >> n;
+
+//     binary_to_deci(n);
+
+//     return 0;
+// }
+
+// void binary_to_deci(int x)
+// {
+//     int r, n = 0, decimal, i, sum = 0;
+    
+    
+//     i=0;
+//     while (x > 0)
+//     {
+//         r = x % 10;
+//         x = x / 10;
+//         decimal = r * pow(2, i);
+//             sum += decimal;
+//         i++;
+//     }
+//     cout << "Length of binary number : " << i << endl;
+    
+
+    
+//     cout << "binary to Decimal coversion = " << sum;
+// }
+
+
+
+
+
+
+//***************9. volume of CUBOID ***********
+
+// #include<iostream>
+// using namespace std;
+
+// void vol(float , float, float)
+// {
+//     int x,y,z,v;
+//     cout<<"Enter the sides of cuboid \n";
+//     cin>>x>>y>>z;
+//     v=x*y*z;
+//     cout<<"Volume of cuboid is "<<v<<endl;
+// }
+// int main(){
+//     int l,b,h;
+//     vol(l,b,h);
+
+//     return 0;
+// }
+
+
+
